@@ -8,8 +8,8 @@
   --white: #fafafb;
   --purple: #331169;
   --blue-light: #08bcad;
-  --blue-dark: #1e4b7c;
-  --green: #2c9070;
+  --blue-dark: #bed5ed;
+  --green: #b8b8b8;
 }
 
 body {
@@ -90,15 +90,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+  background: linear-gradient(to bottom, var(--white), var(--green));
   border-radius: 15px;
   padding: 10px;
-  color: var(--white);
+  color: var(--purple);
   margin: 5px 0;
 }
 
 .seccion-tarea i {
   font-size: 25px;
+  color: var(--purple);
 }
 
 .seccion-tarea > ul p {
@@ -106,11 +107,12 @@ body {
 }
 
 .seccion-tarea i:hover {
-  color: var(--blue-light);
+  transition: 0.3s;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .line-through {
   text-decoration: line-through;
-  color: var(--blue-light);
+  color: rgb(86, 86, 86);
 }
